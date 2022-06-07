@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_communication"
+            android:icon="@drawable/communication_icon"
+            android:title="Communication" />
+
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/atti_icon"
+            android:title="Attendance" />
+
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/assignment_icon"
+            android:title="Assignment" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/calendar_icon"
+            android:title="Calendar" />
+
+        <item
+            android:id="@+id/nav_results"
+            android:icon="@drawable/result_icon"
+            android:title="Results" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gallery_icon"
+            android:title="Gallery" />
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification_icon"
+            android:title="Notification" />
+
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/bus_icon"
+            android:title="Transport Info" />
+
+        <item
+            android:id="@+id/nav_lunch"
+            android:icon="@drawable/lunch_icon"
+            android:title="Lunch Menu" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Profile">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/nav_profile1"
+                    android:icon="@drawable/profile_icon"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/share_icon"/>
+            <item
+                android:id="@+id/nav_rate"
+                android:title="Rate Us"
+                android:icon="@drawable/rate_icon"/>
+
+
+
+        </menu>
+    </item>
+
+</menu>
