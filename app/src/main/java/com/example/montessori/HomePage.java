@@ -23,6 +23,14 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         ImageView imageViewc=findViewById(R.id.imagec);
+        ImageView imageView=findViewById(R.id.pro1);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1=new Intent(HomePage.this,Profile.class);
+                startActivity(intent1);
+            }
+        });
         imageViewc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
