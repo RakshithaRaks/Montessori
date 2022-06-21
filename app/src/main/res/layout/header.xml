@@ -15,15 +15,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Raksha"
+        android:text="Lohit"
         android:textSize="24sp"
         android:fontFamily="@font/merriweather_black"/>
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="www.raksha.com"
-        android:textSize="14sp"
-        android:fontFamily="@font/merriweather_light"/>
+
 
 </LinearLayout>

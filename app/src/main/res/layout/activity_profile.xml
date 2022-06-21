@@ -148,9 +148,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Phone No:"
+                    android:text="Phone No"
                     android:textColor="@color/headings"
-                    android:textSize="13sp" />
+                    android:drawableLeft="@drawable/p1"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -179,6 +180,7 @@
                     android:layout_height="wrap_content"
                     android:text="DOB:"
                     android:textColor="@color/headings"
+                    android:drawableLeft="@drawable/b1"
                     android:textSize="13sp" />
 
                 <TextView
@@ -208,7 +210,8 @@
                     android:layout_height="wrap_content"
                     android:text="Class Teacher:"
                     android:textColor="@color/headings"
-                    android:textSize="13sp" />
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -237,6 +240,7 @@
                     android:layout_height="wrap_content"
                     android:text="Enrollment No:"
                     android:textColor="@color/headings"
+                    android:drawableLeft="@drawable/e"
                     android:textSize="13sp" />
 
                 <TextView

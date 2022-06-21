@@ -7,9 +7,10 @@
     tools:context=".lunchmenu">
 
     <de.codecrafters.tableview.TableView
+        android:id="@+id/lunchmenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lunchmenu"
-        app:tableView_columnCount="5">
-    </de.codecrafters.tableview.TableView>
+        app:tableView_columnCount="5"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="201dp"></de.codecrafters.tableview.TableView>
 </androidx.constraintlayout.widget.ConstraintLayout>

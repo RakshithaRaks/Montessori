@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Pair;
@@ -47,13 +48,25 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,Login.class);
                 Pair[] pairs = new Pair[2];
-                        pairs[0] = new Pair<View,String>(image ,"logo_image");
+                pairs[0] = new Pair<View,String>(image ,"logo_image");
                 pairs[1] = new Pair<View,String>(logo ,"logo_text");
 
                 ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-                startActivity(intent,options.toBundle());
+                SharedPreferences sharedPreferences=getSharedPreferences(Login.Prefs_Name,0);
+                boolean hasloggedin= sharedPreferences.getBoolean("hasLoggedIn",false);
+                if(hasloggedin) {
+
+                    Intent homeIntent = new Intent(MainActivity.this, HomePage.class);
+                    startActivity(homeIntent,options.toBundle());
+                    finish();
+                }
+                else{
+                    Intent intent=new Intent(MainActivity.this,Login.class);
+                    startActivity(intent,options.toBundle());
+                    finish();
+                }
+
             }
         },SPLASH_SCREEN);
 
